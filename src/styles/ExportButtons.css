@@ -1,0 +1,23 @@
+/* ExportButtons.css */
+.export-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .export-button {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+  }
+  
+  .export-button:hover {
+    background-color: #00b8a9; /* Darker teal */
+    transform: scale(1.05);
+  }
