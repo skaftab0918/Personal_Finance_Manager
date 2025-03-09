@@ -1,0 +1,57 @@
+/* Navbar.css */
+nav {
+  background-color: var(--card-background);
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: var(--box-shadow);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 16px;
+  transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--primary-color);
+  opacity: 0.8;
+}
+
+nav button {
+  background-color: #ff4444;
+  color: var(--text-color);
+  border: none;
+  padding: 8px 16px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav button:hover {
+  background-color: #cc0000;
+  transform: scale(1.05);
+}
+
+/* Animation for the navbar */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+nav {
+  animation: slideIn 0.5s ease-in-out;
+}
